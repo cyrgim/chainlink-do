@@ -1,10 +1,12 @@
-// Password for the postgres role
+// Password for the node
 resource "random_password" "node_password" {
   length           = 16
   special          = true
   override_special = "_%@"
 }
 
+
+// Password for the API
 resource "random_password" "api_password" {
   length           = 16
   special          = true
